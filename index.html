@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cont">
+        <div class="display">
+            <input type="text" placeholder="0" name="display" id="display" disabled>
+        </div>
+        <div class="buttonsCont">
+            <input type="button" value="AC" id="clear" onclick="clearDisplay()">
+            <input type="button" value="DEL" id="delete" onclick="deleteLast()">
+            <input type="button" value="/" class="input-button" onclick="appendToDisplay('/')">
+            <input type="button" value="*" class="input-button" onclick="appendToDisplay('*')">
+            
+            <input type="button" value="7" class="input-button" onclick="appendToDisplay('7')">
+            <input type="button" value="8" class="input-button" onclick="appendToDisplay('8')">
+            <input type="button" value="9" class="input-button" onclick="appendToDisplay('9')">
+            <input type="button" value="-" class="input-button" onclick="appendToDisplay('-')">
+            
+            <input type="button" value="4" class="input-button" onclick="appendToDisplay('4')">
+            <input type="button" value="5" class="input-button" onclick="appendToDisplay('5')">
+            <input type="button" value="6" class="input-button" onclick="appendToDisplay('6')">
+            <input type="button" value="+" class="input-button" onclick="appendToDisplay('+')">
+            
+            <input type="button" value="1" class="input-button" onclick="appendToDisplay('1')">
+            <input type="button" value="2" class="input-button" onclick="appendToDisplay('2')">
+            <input type="button" value="3" class="input-button" onclick="appendToDisplay('3')">
+            <input type="button" value="=" class="input-button" onclick="calculateResult()">
+            
+            <input type="button" value="0" class="input-button" onclick="appendToDisplay('0')">
+            <input type="button" value="." class="input-button" onclick="appendToDisplay('.')">
+            <input type="button" value="&#128054;" id="dog" onclick="appendToDisplay('&#128054;')">
+
+            <input type="button" value="miles" id="killometresToMiles" onclick="convertKilometersToMiles()">
+            <input type="button" value="sec" id="minutesToSeconds" onclick="convertMinutesToSeconds()">
+            <input type="button" value="kg" id="gramsToKg" onclick="convertGramsToKg()">
+            <input type="button" value="F°" id=celsiusToFahrenheit" onclick="convertCelsiusToFahrenheit()">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
